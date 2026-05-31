@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Muhammad Halid</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#020d2b;
+      color:white;
+    }
+
+    /* NAVBAR */
+    nav{
+      width:100%;
+      padding:25px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      background:rgba(2,13,43,0.9);
+      backdrop-filter:blur(10px);
+      z-index:1000;
+    }
+
+    nav h1{
+      color:#17a9ff;
+      font-size:40px;
+      font-weight:bold;
+    }
+
+    nav ul{
+      display:flex;
+      gap:30px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#17a9ff;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:120px 20px 50px;
+    }
+
+    .hero h3{
+      color:#17a9ff;
+      font-size:40px;
+      margin-bottom:15px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      margin-bottom:25px;
+    }
+
+    .hero p{
+      max-width:850px;
+      font-size:28px;
+      line-height:1.8;
+      color:#e2e2e2;
+      margin-bottom:40px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:18px 45px;
+      background:#17a9ff;
+      color:black;
+      border-radius:40px;
+      text-decoration:none;
+      font-size:22px;
+      font-weight:bold;
+      transition:0.3s;
+      margin-bottom:50px;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#35b8ff;
+    }
+
+    /* PROFILE LOGO */
+    .logo-circle{
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:#2f73f0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:100px;
+      font-weight:bold;
+      box-shadow:0 0 40px rgba(0, 140, 255, 0.6);
+    }
+
+    /* SECTION */
+    section{
+      padding:100px 10%;
+    }
+
+    .title{
+      text-align:center;
+      font-size:50px;
+      margin-bottom:60px;
+      color:#17a9ff;
+    }
+
+    /* CARD */
+    .card-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#081738;
+      padding:35px;
+      border-radius:20px;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 25px rgba(23,169,255,0.5);
+    }
+
+    .card h2{
+      color:#17a9ff;
+      margin-bottom:20px;
+      font-size:30px;
+    }
+
+    .card p{
+      font-size:20px;
+      line-height:1.8;
+      color:#dddddd;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#01081d;
+      color:#bdbdbd;
+      font-size:18px;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero h3{
+        font-size:28px;
+      }
+
+      .hero p{
+        font-size:20px;
+      }
+
+      .logo-circle{
+        width:180px;
+        height:180px;
+        font-size:70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1>Halid.</h1>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#prestasi">Prestasi</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <h3>Halo, Saya</h3>
+
+    <h1>Muhammad Halid</h1>
+
+    <p>
+      Mahasiswa kreatif dan inovatif yang memiliki minat besar dalam
+      pengembangan teknologi digital, desain modern, dan pengembangan website.
+      Aktif dalam berbagai kegiatan organisasi kampus serta memiliki kemampuan
+      bekerja sama dalam tim untuk menciptakan solusi digital yang elegan dan profesional.
+    </p>
+
+    <a href="#tentang" class="btn">Lihat Portofolio</a>
+
+    <div class="logo-circle">
+      MH
+    </div>
+
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+
+    <h1 class="title">Tentang Saya</h1>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h2>Bio</h2>
+
+        <p>
+          Muhammad Halid adalah mahasiswa yang aktif dalam dunia teknologi
+          dan desain digital. Memiliki passion dalam pembuatan website modern,
+          UI/UX design, serta pengembangan media digital kreatif. Dikenal sebagai
+          pribadi disiplin, inovatif, dan mudah beradaptasi dalam berbagai lingkungan kerja.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Status</h2>
+
+        <p>
+          Jenis Kelamin : Laki-Laki <br><br>
+          Status : Mahasiswa <br><br>
+          Bidang Minat : Web Development, Desain Digital, dan Teknologi Modern.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section id="pengalaman">
+
+    <h1 class="title">Pengalaman Kerja</h1>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h2>Frontend Developer Intern</h2>
+
+        <p>
+          Pernah mengikuti program magang sebagai Frontend Developer
+          di perusahaan teknologi lokal selama 6 bulan dengan fokus
+          pada pengembangan website responsif dan modern.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Freelance Designer</h2>
+
+        <p>
+          Mengembangkan berbagai desain poster digital, banner promosi,
+          dan tampilan media sosial untuk UMKM dan organisasi kampus.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Project Kampus</h2>
+
+        <p>
+          Berpartisipasi dalam berbagai proyek digital kampus seperti
+          pembuatan website acara, sistem informasi sederhana, dan branding organisasi.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRESTASI -->
+  <section id="prestasi">
+
+    <h1 class="title">Pencapaian & Karir</h1>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h2>Juara Kompetisi Digital</h2>
+
+        <p>
+          Meraih penghargaan dalam kompetisi desain dan inovasi digital tingkat kampus
+          berkat konsep website modern dan kreatif.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Sertifikasi Teknologi</h2>
+
+        <p>
+          Memiliki beberapa sertifikat pelatihan di bidang desain web,
+          UI/UX, dan pengembangan teknologi digital modern.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Karir Masa Depan</h2>
+
+        <p>
+          Berfokus untuk menjadi seorang Web Developer profesional
+          dan Digital Creative Specialist yang mampu membangun solusi digital inovatif.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Muhammad Halid | Portofolio Website
+  </footer>
+
+</body>
+</html>
